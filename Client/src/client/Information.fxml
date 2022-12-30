@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.InformationController">
+    <children>
+        <ImageView fitHeight="530.0" fitWidth="620.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/airplane.jpg"/>
+            </image>
+        </ImageView>
+        <Label layoutX="180.0" layoutY="14.0" text="РЕГИСТРАЦИЯ">
+            <font>
+                <Font size="30.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="textField" layoutX="-100.0" layoutY="3.0" onKeyTyped="#textFieldTyped" prefHeight="0.0"
+                   prefWidth="0.0" promptText="Enter something here"/>
+
+        <Label fx:id="count" layoutX="50.0" layoutY="100.0" onKeyTyped="#labelTyped" prefHeight="17.0" prefWidth="539.0"
+               text="Время начала регистрации билетов и оформления багажа определяют авиакомпании."/>
+        <Label fx:id="count1" layoutX="50.0" layoutY="120.0" onKeyTyped="#labelTyped" prefHeight="17.0" prefWidth="539.0"
+               text="Эта информация сообщается пассажиру в момент приобретения билет,"/>
+        <Label fx:id="count2" layoutX="50.0" layoutY="140.0" onKeyTyped="#labelTyped" prefHeight="17.0" prefWidth="539.0"
+               text="Ориентировочное время начала регистрации - за 2 часа до отправления рейса."/>
+        <Button fx:id="goBack" layoutX="60.0" layoutY="356.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="129.0"
+               text="Назад" textFill="BLACK"/>
+    </children>
+</AnchorPane>

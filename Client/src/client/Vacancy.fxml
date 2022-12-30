@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0"
+            prefWidth="642.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.VacancyController">
+    <children>
+        <ImageView fitHeight="446.0" fitWidth="732.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/northern-lights.jpg"/>
+            </image>
+        </ImageView>
+        <TableView fx:id="AvailableEmployeeTableView" layoutY="30.0" layoutX="70.0" prefHeight="231.0" prefWidth="500.0">
+            <columns>
+                <TableColumn fx:id="EmployeeIDColumn" prefWidth="50.0" text="№"/>
+                <TableColumn fx:id="surname" prefWidth="250.0" text="Фамилия"/>
+                <TableColumn fx:id="name" prefWidth="200.0" text="Имя"/>
+                <TableColumn fx:id="post" prefWidth="200.0" text="Должность"/>
+                <TableColumn fx:id="salary" prefWidth="200.0" text="Зарплата"/>
+            </columns>
+        </TableView>
+        <Button fx:id="goBack" layoutX="60.0" layoutY="356.0" mnemonicParsing="false" prefHeight="26.0"
+                prefWidth="129.0" style="-fx-background-color: #424242;" text="Выйти" textFill="WHITE"/>
+    </children>
+</AnchorPane>

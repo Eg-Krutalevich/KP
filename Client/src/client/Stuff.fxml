@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0"
+            prefWidth="642.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.StuffController">
+    <children>
+        <ImageView fitHeight="446.0" fitWidth="732.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/cloud.jpg"/>
+            </image>
+        </ImageView>
+        <TableView fx:id="AvailableStuffTableView" layoutX="60.0" layoutY="3.0" prefHeight="231.0" prefWidth="470.0">
+            <columns>
+                <TableColumn fx:id="StuffIDColumn" prefWidth="50.0" text="№"/>
+                <TableColumn fx:id="stuff" prefWidth="150.0" text="Предмет"/>
+                <TableColumn fx:id="punishment" prefWidth="270.0" text="Предусмотренное наказание"/>
+            </columns>
+        </TableView>
+        <Button fx:id="goBack" layoutX="60.0" layoutY="356.0" mnemonicParsing="false" prefHeight="26.0"
+                prefWidth="129.0" style="-fx-background-color: #424242;" text="Назад" textFill="WHITE"/>
+    </children>
+</AnchorPane>

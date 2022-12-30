@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="390.0" prefWidth="715.0" style="-fx-background-color: #DCBBF7;"
+            xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.FlightsController">
+    <children>
+        <ImageView fitHeight="409.0" fitWidth="721.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/airport.jpg"/>
+            </image>
+        </ImageView>
+        <Pane layoutX="-30.0" layoutY="265.0" prefHeight="86.0" prefWidth="745.0" style="-fx-background-color: grey;">
+            <children>
+                <TextField fx:id="FlyOutDateTF" layoutX="174.0" layoutY="30.0" prefHeight="26.0" prefWidth="142.0"
+                           promptText="ДД.ММ.ГГГГ" style="-fx-background-color: #E0E6F8;"/>
+                <TextField fx:id="FlyToAirportField" layoutX="340.0" layoutY="30.0" prefHeight="26.0" prefWidth="142.0"
+                           promptText="Аэропорт" style="-fx-background-color: #E0E6F8;"/>
+                <Button fx:id="finder" layoutX="506.0" layoutY="31.0" mnemonicParsing="false" text="Фильтровать"/>
+            </children>
+        </Pane>
+        <TableView fx:id="AvailableFlyTableView" layoutY="3.0" prefHeight="231.0" prefWidth="732.0">
+            <columns>
+                <TableColumn fx:id="FlIDColumn" prefWidth="50.0" text="№"/>
+                <TableColumn fx:id="inAirport" prefWidth="115.0" text="Точка назначения"/>
+                <TableColumn fx:id="date" prefWidth="115.0" text="Дата"/>
+                <TableColumn fx:id="outTime" prefWidth="115.0" text="Вылет"/>
+                <TableColumn fx:id="inTime" prefWidth="115.0" text="Прилёт"/>
+                <TableColumn fx:id="seatsAmount" prefWidth="115.0" text="Свободные места"/>
+                <TableColumn fx:id="price" prefWidth="115.0" text="Цена"/>
+            </columns>
+        </TableView>
+        <Button fx:id="goBack" layoutX="295.0" layoutY="356.0" mnemonicParsing="false" prefHeight="26.0"
+                prefWidth="129.0" style="-fx-background-color: #424242;" text="Выйти" textFill="WHITE"/>
+    </children>
+</AnchorPane>
